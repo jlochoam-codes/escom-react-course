@@ -32,6 +32,6 @@
   color: var(--fourth);
 }
 
-h3, h4, h5 {
+.static-data {
   color: var(--white);
 }
