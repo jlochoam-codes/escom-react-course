@@ -9,11 +9,15 @@ const Index = ({ form, onChange, onSubmit }) => (
           <img className="w-50" src={Logo} alt="Illustrative logo for the login form" />
         </div>
         <div className="text-center">
-          <h3>{form.email}</h3>
+          <h3>{form.banknum}</h3>
         </div>
         <div className="form-group my-2">
           <label htmlFor="email" className="form-label">Email address</label>
           <input onChange={onChange} value={form.email} type="email" className="form-control" id="email" placeholder="name@example.com" autoFocus />
+        </div>
+        <div className="form-group mb-2">
+          <label htmlFor="banknum" className="form-label">Customer number</label>
+          <input onChange={onChange} value={form.banknum} type="number" className="form-control" id="banknum" placeholder="11223344" />
         </div>
         <div className="form-group mb-4">
           <label htmlFor="pw" className="form-label">Password</label>
