@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import Index from "../pages/Index";
-import LoggedIn from "../pages/LoggedIn";
 
 const IndexContainer = () => {
   const [form, setForm] = useState({ email: "", banknum: "", pw: "" });
