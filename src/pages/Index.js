@@ -13,7 +13,7 @@ const Index = ({ form, onChange, onSubmit }) => (
         </div>
         <div className="form-group my-2">
           <label htmlFor="email" className="form-label">Email address</label>
-          <input onChange={onChange} value={form.email} type="email" className="form-control" id="email" placeholder="name@example.com" autoFocus />
+          <input autoComplete="off" required onChange={onChange} value={form.email} type="email" className="form-control" id="email" placeholder="name@example.com" autoFocus />
         </div>
         <div className="form-group mb-2">
           <label htmlFor="banknum" className="form-label">Customer number</label>

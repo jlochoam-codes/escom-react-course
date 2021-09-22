@@ -13,7 +13,7 @@ const IndexContainer = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(form);
-    history.push("/loggedin", { form: form });
+    history.push("/welcome", { form: form });
   }
 
   return (
