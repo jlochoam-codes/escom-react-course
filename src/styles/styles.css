@@ -1,0 +1,42 @@
+:root {
+  --main: #2C2E43;
+  --second: #595260;
+  --third: #B2B1B9;
+  --fourth: #FFD523;
+  --black: #131313;
+  --white: #f0e8e8;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--main);
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-react {
+  max-width: 500px;
+  width: 100%;
+  padding: 50px 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.dynamic-data {
+  color: var(--fourth);
+}
+
+.static-data {
+  color: var(--white);
+}
+
+.table {
+  background-color: #FFF;
+  border-radius: 10px;
+}
