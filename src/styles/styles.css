@@ -40,3 +40,15 @@
   background-color: #FFF;
   border-radius: 10px;
 }
+
+.form {
+  max-width: 500px;
+}
+
+.txt-rfc {
+  letter-spacing: 10px;
+}
+
+input {
+  text-transform: uppercase;
+}
