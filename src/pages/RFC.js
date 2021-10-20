@@ -17,6 +17,7 @@ const RFC = ({
             type="text"
             name="nombre"
             onChange={onChange}
+            autoFocus="true"
           />
         </div>
         <div className='form-group mt-3'>
@@ -51,7 +52,16 @@ const RFC = ({
         </div>
       </form>
       <div className='text-center mt-5 txt-rfc'>
-        {rfc[0]}{rfc[1]}{rfc[2]}{rfc[3]}{rfc[4]}{rfc[5]}{rfc[6]}{rfc[7]}{rfc[8]}{rfc[9]}-###
+        {rfc[0]}
+        {rfc[1]}
+        {rfc[2]}
+        {rfc[3]}
+        {rfc[4]}
+        {rfc[5]}
+        {rfc[6]}
+        {rfc[7]}
+        {rfc[8]}
+        {rfc[9]}-###
       </div>
     </div>
   </>

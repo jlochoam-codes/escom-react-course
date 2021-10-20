@@ -60,6 +60,11 @@ const RFCContainer = () => {
           currRfc[i] = '*';
       }
     }
+    // If something other than nombre changes (ap or am),
+    // maybe the formed word is now not forbidden, and we
+    // should replace the 'X' with the first nombre char
+    if (e.target.name !== 'nombre')
+      currRfc[3] = form.nombre.charAt(0).toUpperCase();
     const rfcLetters = currRfc.toString().replace(/,/g, '').substring(0, 4);
     if (forbiddenWords.includes(rfcLetters))
       currRfc[3] = 'X';
