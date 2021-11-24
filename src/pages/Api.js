@@ -11,7 +11,7 @@ const Api = ({ consumir, perfiles }) => {
     <div className="container">
       <div className='container-form'>
         <form className='form-react'>
-          <div className='text-center mt-5 form-group'>
+          <div className='text-center form-group'>
             <label htmlFor='userSearch' className='form-label'>Usuario de GitHub:</label>
             <input
               id='userSearch'
@@ -21,7 +21,7 @@ const Api = ({ consumir, perfiles }) => {
               autoFocus
               className='form-control' />
           </div>
-          <div className="text-center mt-5 form-group">
+          <div className="text-center mt-3 form-group">
             <button
               type='button'
               onClick={() => consumir(searchField)}
@@ -29,17 +29,22 @@ const Api = ({ consumir, perfiles }) => {
           </div>
         </form>
       </div>
-      <div className="mt-3">
-        {
-          perfiles.map(
-            (item, i) => (
-              <div key={i}>
-                <img src={item.avatar_url} alt="Perfil" />
-                <a target="_blank" rel="noreferrer" href={item.html_url}>{item.login}</a>
-              </div>
+      <div className="container">
+        <div className='row'>
+          {
+            perfiles.map(
+              (item, i) => (
+                <div key={i} className='col-5 col-lg-3 mb-5'>
+                  <img className='img-thumbnail' src={item.avatar_url} alt="Perfil" />
+                  <a className=''
+                    target="_blank" rel="noreferrer" href={item.html_url}>
+                    {item.login}
+                  </a>
+                </div>
+              )
             )
-          )
-        }
+          }
+        </div>
       </div>
     </div>
   );

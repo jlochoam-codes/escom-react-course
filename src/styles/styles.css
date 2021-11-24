@@ -52,3 +52,8 @@
 input {
   text-transform: uppercase;
 }
+
+img {
+  max-width: 30% !important;
+  margin-right: 20px;
+}
