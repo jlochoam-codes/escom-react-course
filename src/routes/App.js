@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ApiContainer from "../containers/ApiContainer";
+import DomicilioContainer from "../containers/DomicilioContainer";
 import IndexContainer from "../containers/IndexContainer";
 import LoggedInContainer from "../containers/LoggedInContainer";
 import RFCContainer from "../containers/RFCContainer";
@@ -24,6 +25,9 @@ const App = () => {
         </Route>
         <Route exact path="/api">
           <ApiContainer />
+        </Route>
+        <Route exact path="/domicilio">
+          <DomicilioContainer />
         </Route>
         <Route path="/">
           <div className="container mt-5 text-center">
